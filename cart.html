@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - MRECW Cafeteria</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+  #qrcode {
+      margin-top: 15px;
+    }
+</style>
+  
+</head>
+<body>
+
+  <header>
+    <h1>🛒 Your Cart</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <section id="cart">
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0</p>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  </section>
+
+ <section id="bill">
+  <h2>Your Bill 🧾</h2>
+  <div id="bill-details"></div>
+<button onclick="generateQR()">Generate QR for Payment</button>
+<div id="upi-qrcode"></div>
+
+ 
+
+ 
+</section>
+ 
+  
+  
+<script src="script.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+
+  
+
+  
+</body>
+</html>
